@@ -1,6 +1,7 @@
 import firebase from "firebase";
 import "firebase/auth";
 import 'firebase/storage';
+import database from "@react-native-firebase/database";
 import { initializeApp } from 'firebase/app';
 
 
@@ -14,8 +15,7 @@ const firebaseConfig = {
     appId: "1:854034421704:web:a09eaf487afb85c25252fd"
   }
   firebase.initializeApp(firebaseConfig);
-  const database = firebase.firestore();
   //const app = firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
 
-  export {firebase, auth, database};
+  export {firebase, auth, database};  
