@@ -2,30 +2,30 @@ import React, { Component } from "react";
 import { View, Text } from "react-native";
 import { database } from "../../services/firebase";
 
-class Umi extends Component{
-    constructor(props){
+class Umi extends Component {
+    constructor(props) {
         super(props);
-        this.state={
-            Temperatura: '10'
+        this.state = {
+            Temperatura: '0'
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         database()
-        .ref('User/Umidade')
-        .on('value', snapshot =>{
-            console.log(snapshot.val())
-            this.setState({
-                Umidade:snapshot.val()
-            })
-        });
+            .ref('User/Umidade')
+            .on('value', snapshot => {
+                console.log(snapshot.val())
+                this.setState({
+                    Umidade: snapshot.val()
+                })
+            });
 
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <View>
-                <Text>
+                <Text style={{ fontSize: 24 }}>
                     {this.state.Umidade}
                 </Text>
             </View>

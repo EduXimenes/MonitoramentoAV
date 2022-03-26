@@ -190,12 +190,12 @@ const styles = StyleSheet.create({
       padding: 10,
     },
     btnSubmit: {
-      width: '90%',
+      width: '60%',
       height: 45,
       backgroundColor: '#35AFFF',
       alignItems: 'center',
-      justifyContent: 'center',
-      borderRadius: 7,
+      justifyContent: 'center', 
+      borderRadius: 50,
     },
     contentAlert:{
 
