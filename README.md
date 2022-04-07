@@ -6,3 +6,7 @@ O projeto consiste em um sistema de sensoriamento de Temperatura, Umidade e Lumi
 O Aplicativo é responsável pela leitura em tempo real desses dados e manipulação de algumas variáveis para alertas automáticos
 
 Em processo de finalização.
+
+
+Login: teste@hotmail.com
+Pass: 123456
